@@ -1,0 +1,39 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'about_main.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	section.about_main
+		.container
+			.about_main-blok
+				span о нас
+				h1 Anvirelle — стильная детская одежда и обувь для детей и подростков 
+				p Anvirelle — стильная детская одежда и обувь для детей и подростков от 2 до 16 лет. Магазин для детей, которые ценят безупречный стиль.
+
+				p Актуальные коллекции российских и зарубежных марок. В наших магазинах представлены сезонные коллекции: от повседневных нарядов до школьной формы и праздничных костюмов. 
+
+				p Магазин Anvirelle предлагает только качественные, модные и одновременно практичные вещи. Выбирая одежду здесь, вы с ранних лет прививаете ребенку хороший вкус!
+
+				p Актуальные скидки и консультации стилистов ждут вас в наших фирменных бутиках.
+		img(src="img/about_main.png", alt="")
+
+
+
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	

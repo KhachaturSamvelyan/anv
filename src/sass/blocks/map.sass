@@ -1,0 +1,72 @@
+@import "../blocks/var"
+
+.map
+    border-top: 1px solid #e3e3e3
+    border-bottom: 1px solid #e3e3e3
+    padding: 41px 0 92px
+    margin-bottom: 86px
+    &-blok
+        display: flex
+        justify-content: space-between
+        &-item
+            display: flex
+            flex-direction: column
+            max-width: 651px
+            justify-content: space-between
+            &-title
+                display: flex
+                flex-direction: column
+                margin-bottom: 60px
+                img
+                    margin-bottom: 23px
+                p
+                    color: #1f1f1f
+                    font-family: $nunito
+                    font-size: 19px
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+                    line-height: 18.61px
+                    text-align: left
+            iframe
+                border: none
+                margin-bottom: 30px
+                // pointer-events: none
+
+
+
+
+@media (max-width: 1380px)
+    .map
+        &-blok
+            &-item
+                min-width: unset
+                max-width: 49%
+                &-title
+                    img
+                        width: 42px!important
+                img
+                    width: 100%
+
+
+@media (max-width: 768px)
+    .map
+        padding-bottom: 20px
+        margin-bottom: 20px
+        &-blok
+            flex-direction: column
+            &-item
+                min-width: unset
+                max-width: 100%
+                margin-bottom: 40px
+                &-title
+                    margin-bottom: 15px
+                    text-align: center
+                    align-items: center
+                    img
+                        width: 42px!important
+                        margin-bottom: 10px
+                    p
+                        margin-bottom: 10px
+                img
+                    width: 100%

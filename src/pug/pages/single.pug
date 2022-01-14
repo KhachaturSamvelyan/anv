@@ -1,0 +1,28 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'single.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	include ../blocks/single_top.pug
+	include ../blocks/similar.pug
+	include ../blocks/add_rew.pug
+	include ../blocks/alert_buy.pug
+
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	

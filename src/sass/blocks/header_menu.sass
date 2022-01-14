@@ -1,0 +1,90 @@
+@import "../blocks/var"
+
+.header_menu
+    padding: 20px 0
+    border-bottom: 1px solid $gray
+    &-item
+        position: relative
+    ul
+        display: flex
+        align-items: center
+        justify-content: space-between
+        li
+            .arr
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 59px
+                width: 14px
+                height: 10px
+                z-index: 9
+                // background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 24%)
+                display: none
+            &:hover
+                .arr
+                    display: block
+                .menu-li-item
+                    display: block
+            a
+                display: flex
+                align-items: center
+                color: #282828
+                font-family: $nunito
+                font-size: 18px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 14.79px
+                text-align: left
+                transition: 0.3s
+                position: relative
+                &:hover
+                    color: $darkBlue
+                svg
+                    margin-left: 11px
+            .menu-li-item
+                position: absolute
+                left: 0
+                top: 9.7px
+                padding-top: 56px
+                width: 100%
+                display: none
+                
+            .menu-li
+                padding: 46px 66px
+                border: 1px solid rgba(0, 0, 1, 0.34)
+                background-color: #ffffff
+                opacity: 0.9
+                &_content
+                    display: flex
+                    ul
+                        flex-direction: column
+                        align-items: flex-start
+                        justify-content: flex-start
+                        li
+                            a
+                                color: #181818
+                                font-family: $nunito
+                                font-size: 16px
+                                font-weight: 700
+                                font-style: normal
+                                letter-spacing: normal
+                                line-height: 23.79px
+                                text-align: left
+                                transition: 0.3s
+                                &:hover
+                                    color: $darkBlue
+                            &:not(:last-child)
+                                margin-bottom: 39px
+                        &:not(:last-child)
+                            margin-right: 159px
+
+        .pink
+            a
+                color: $pink
+
+
+
+@media (max-width: 1065px)
+    .header_menu
+        display: none

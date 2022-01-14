@@ -1,0 +1,96 @@
+@import "../blocks/var"
+
+.popular
+    margin-bottom: 92px
+    h2
+        color: #373737
+        font-family: $nunito
+        font-size: 27px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21.01px
+        text-align: center
+        margin-bottom: 41px
+        text-align: left
+    &-blok
+        display: flex
+        justify-content: space-between
+        &_item
+            min-width: 430px
+            transition: 0.3s
+            a
+                &:hover
+                    p
+                        color: $darkBlue
+
+
+            &:nth-child(2)
+                flex-direction: column
+                a
+                    display: block
+                    height: 255px
+                    &:first-child
+                        margin-bottom: 37px
+            &-blok
+                height: 100%
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+                padding: 38px 52px
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.05)
+                p
+                    color: #000000
+                    font-family: $nunito
+                    font-size: 23px
+                    font-weight: 700
+                    font-style: normal
+                    letter-spacing: normal
+                    line-height: 31.92px
+                    text-align: left
+                    max-width: 128px
+                    display: block
+            
+               
+                    
+
+@media (max-width: 1380px)
+    .popular
+        &-blok
+            &_item
+                min-width: 30%
+
+
+@media (max-width: 1215px)
+    .popular
+        &-blok
+            &_item
+                min-width: 30%
+                &-blok
+                    padding-top: 20px
+
+
+@media (max-width: 768px)
+    .popular
+        margin-bottom: 20px
+        h2
+            text-align: center
+        &-blok
+            flex-direction: column
+            &_item
+                min-width: 100%
+                &:nth-child(2)
+                    flex-direction: column
+                    a
+                        display: block
+                        height: unset
+                        &:first-child
+                            margin-bottom: 0
+                &-blok
+                    padding-top: 20px
+                    padding-left: 20px
+                    height: 255px
+                    margin-bottom: 20px
+                    background-position: center left

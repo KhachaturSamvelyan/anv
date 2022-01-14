@@ -1,0 +1,119 @@
+@import "../blocks/var"
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header_top"
+@import "../blocks/header_logo"
+@import "../blocks/header_menu"
+@import "../blocks/footer"
+@import "../blocks/map"
+
+
+
+
+.mobile-gender
+    display: none!important
+
+.contact
+    margin-top: 62px
+    margin-bottom: 50px
+    &-blok
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-left
+            p
+                margin-bottom: 34px
+                color: #7e7e7e
+                font-family: $nunito
+                font-size: 19px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                text-transform: uppercase
+            h1
+                max-width: 278px
+                color: #1a1a1a
+                font-family: $nunito
+                font-size: 63px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 76.79px
+        &-right
+            padding: 41px 0
+            min-width: 659px
+            border: 1px solid rgba(0, 0, 1, 0.28)
+            text-align: center
+            border-radius: 8px
+            .tel
+                color: #1f1f1f
+                font-family: $nunito
+                font-size: 40px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                text-align: center
+                text-transform: uppercase
+                margin-bottom: 22px
+                display: block
+                transition: 0.3s
+                &:hover
+                    color: $darkBlue
+            .mail
+                display: block
+                color: #1f1f1f
+                font-family: $nunito
+                font-size: 30px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                text-align: center
+                text-transform: uppercase
+                margin-bottom: 27px
+                transition: 0.3s
+                &:hover
+                    color: $darkBlue
+            &_social
+                img
+                    transition: 0.3s
+                    &:hover
+                        filter: invert(50%) sepia(43%) saturate(821%) hue-rotate(160deg) brightness(87%) contrast(95%)
+
+
+
+
+@media (max-width: 1025px)
+    .contact
+        &-blok
+            flex-direction: column
+            &-left
+                p
+                    text-align: center
+                h1
+                    max-width: 100%
+            &-right
+                min-width: 100%
+                margin-top: 20px
+
+@media (max-width: 545px)
+    .contact
+        &-blok
+            flex-direction: column
+            &-left
+                p
+                    text-align: center
+                    margin-bottom: 20px
+                h1
+                    max-width: 100%
+                    font-size: 25px
+                    line-height: 30px
+                
+            &-right
+                min-width: 100%
+                margin-top: 20px
+                padding: 20px 0
+                .tel
+                    font-size: 20px
+                .mail
+                    font-size: 20px

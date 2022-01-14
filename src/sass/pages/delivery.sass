@@ -1,0 +1,92 @@
+@import "../blocks/var"
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header_top"
+@import "../blocks/header_logo"
+@import "../blocks/header_menu"
+@import "../blocks/footer"
+
+.mobile-gender
+    display: none!important
+.delivery
+    margin: 103px auto 186px
+    max-width: 1221px
+    &-blok
+        .p
+            color: #7e7e7e
+            font-family: Nunito
+            font-size: 19px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            text-transform: uppercase
+            margin-bottom: 30px
+        h1
+            color: #1a1a1a
+            font-family: $nunito
+            font-size: 63px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            text-align: left
+            font-style: normal
+            max-width: 376px
+            margin-bottom: 99px
+        &-item
+            padding: 37px 0 
+            border-top: 1px solid #888888
+            display: flex
+            img
+                margin-right: 35px
+            p
+                color: #707070
+                font-family: Nunito
+                font-size: 21px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 35.79px
+                text-align: left
+              
+                max-width: 815px
+                b
+                    color: #1a1a1a
+                .blue
+                    color: #0d59a9
+
+          
+       
+        .fs
+            border-bottom: 1px solid #888888
+
+
+
+@media (max-width: 1221px)
+    .delivery
+        max-width: 95%
+    
+
+
+@media (max-width: 768px)
+    .delivery
+        margin: 30px auto 
+        &-blok
+            .p
+                text-align: center
+                margin-bottom: 20px
+            h1
+                font-size: 25px
+                line-height: 30px
+                margin-bottom: 25px
+                max-width: 100%
+                text-align: center
+                br
+                    display: none
+            &-item
+                padding: 20px
+                img
+                    margin-right: 20px
+                p
+                    font-size: 18px
+                    line-height: 30px
+                    max-width: 100%

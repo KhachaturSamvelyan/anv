@@ -1,0 +1,113 @@
+@import "../blocks/var"
+
+
+
+.alert
+    padding: 51px 42px
+    background: white 
+    position: fixed
+    right: 0
+    bottom: 0
+    min-width: 528px
+    border: 1px  solid $lightGray
+    z-index: 99999999999999999
+    display: none
+    #close-alert
+        position: absolute
+        top: 42px
+        right: 35px
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+            path
+                fill: $darkBlue
+    .title
+        color: #000000
+        font-family: $nunito
+        font-size: 22px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        margin-bottom: 41px
+    ul
+        margin-bottom: 60px
+        li
+            display: flex
+            align-items: center
+            padding: 17px 0
+            border-top: 1px solid $darkGray
+            border-bottom: 1px solid $darkGray
+            img
+                width: 48px
+                height: 58px
+                object-fit: cover
+                margin-right: 20px
+            p
+                margin-right: 37px
+                color: #373737
+                font-family: $nunito
+                font-size: 17px
+                font-weight: 300
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                max-width: 203px
+                margin-bottom: 0
+            span
+                color: #373737
+                font-family: $nunito
+                font-size: 17px
+                font-weight: 300
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+    a
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        color: #3684c5
+        font-family: $nunito
+        font-size: 21px
+        font-weight: 300
+        font-style: normal
+        letter-spacing: normal
+        line-height: 28.18px
+        text-align: left
+        transition: 0.3s
+        &:hover
+            color: black
+            svg
+                path
+                    fill: black
+        svg
+            margin-right: 21px
+
+.black_alert
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .1)
+    position: fixed
+    top: 0
+    display: none
+
+
+
+@media (max-width: 768px)
+    .alert
+        padding: 20px
+        min-width: 100%
+        .title
+            font-size: 20px
+        ul
+            margin-bottom: 30px
+            li
+                padding: 15px 0
+                img
+                    margin-right: 10px
+                p
+                    margin-right: 10px
+                    font-size: 16px
+                 
+                span
+                    font-size: 15px
+        

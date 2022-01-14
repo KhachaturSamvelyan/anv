@@ -1,0 +1,92 @@
+@import "../blocks/var"
+
+.slider
+    margin: 37px auto 47px
+    .owl-carousel
+        .owl-dots
+            text-align: center
+            button
+                width: 10px
+                height: 10px
+                background: #cecece
+                border-radius: 100%
+                &:not(:last-child)
+                    margin-right: 34px
+            .active
+                background: #288acb
+    &-item
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        padding: 144px 37px 60px 
+        &_content
+            max-width: 290px
+            background: white
+            padding: 40px 31px 31px
+            p
+                margin-bottom: 23px
+                color: #171717
+                font-family: $nunito
+                font-size: 25px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: 21.18px
+                text-align: left
+            span
+                margin-bottom: 30px
+                display: block
+                color: #171717
+                font-family: $nunito
+                font-size: 16px
+                font-weight: 300
+                font-style: normal
+                letter-spacing: normal
+                line-height: 23.18px
+                text-align: left
+            a
+                color: #171717
+                font-family: $nunito
+                font-size: 18px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: 21.18px
+                text-align: center
+                text-transform: uppercase
+                padding: 22px 60px
+                border: 1px solid #000001
+                background-color: #ffffff
+                transition: 0.3s
+                display: block
+                &:hover
+                    color: white
+                    background: #000001
+
+
+@media (max-width: 768px)
+    .slider
+        margin-top: 0
+        .owl-carousel
+            .owl-dots
+                button
+                    width: 8px
+                    height: 8px
+                    &:not(:last-child)
+                        margin-right: 15px
+        &-item
+            padding-bottom: 50px
+            &_content
+                margin: 0 auto
+                text-align: center
+                p
+                    text-align: center
+                span
+                    text-align: center
+    .cat
+        margin-bottom: 20px!important
+    .price-blok
+        flex-direction: column
+        &_item
+            margin-left: 0!important
+            margin-top: 10px

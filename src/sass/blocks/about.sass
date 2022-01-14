@@ -1,0 +1,97 @@
+@import "../blocks/var"
+
+.about
+    margin-bottom: 99px
+    &-blok
+        display: flex
+        justify-content: space-between
+        &_left
+            max-width: 674px
+            h2
+                color: #1f1f1f
+                font-family: $nunito
+                font-size: 50px
+                font-weight: 800
+                font-style: normal
+                letter-spacing: normal
+                line-height: 74.79px
+                text-align: left
+                margin-bottom: 98px
+            p
+                color: #1f1f1f
+                font-family: $nunito
+                font-size: 17px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 34.79px
+                text-align: left
+                &:not(:last-child)
+                    margin-bottom: 50px
+        &_right
+            img
+                margin-bottom: 52px
+            a
+                display: block
+                color: #2e2e2e
+                font-family: $nunito
+                font-size: 18px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: 26.88px
+                text-align: center
+                font-style: normal
+                padding: 22px 0
+                border: 1px solid #d2d2d2
+                background-color: #ffffff
+                transition: 0.3s
+                &:hover
+                    background: $darkBlue
+                    color: white
+                 
+
+@media (max-width: 1080px)
+    .about
+        &-blok
+            flex-direction: column
+            align-items: center
+            &_left
+                text-align: center
+                max-width: 100%
+                h2
+                    text-align: center
+                p 
+                    text-align: center
+            &_right
+                img
+                    width: 100%
+                    margin-top: 20px
+
+@media (max-width: 768px)
+    .about
+        margin-bottom: 50px
+        &-blok
+            flex-direction: column
+            align-items: center
+            &_left
+                text-align: center
+                max-width: 100%
+                h2
+                    text-align: center
+                    font-size: 25px
+                    line-height: 30px
+                    margin-bottom: 25px
+                p 
+                    text-align: center
+                    font-size: 16px
+                    &:not(:last-child)
+                        margin-bottom: 20px
+            &_right
+                img
+                    width: 100%
+                    margin-top: 20px
+                    margin-bottom: 10px
+                    max-width: 350px
+                a
+                    padding: 10px

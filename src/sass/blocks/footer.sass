@@ -1,0 +1,86 @@
+@import "../blocks/var"
+
+.footer
+    padding: 65px 0
+    background: #33333d
+    &-blok
+        display: flex
+        justify-content: space-between
+        ul
+            max-width: 230px
+            li
+                p
+                    color: #ffffff
+                    font-family: $nunito
+                    font-size: 24px
+                    font-weight: 400
+                    font-style: normal
+                    letter-spacing: normal
+                    text-align: left
+                    margin-bottom: 28px
+                a
+                    color: #e4e4e4
+                    font-family: $nunito
+                    font-size: 16px
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+                    text-align: left
+                    display: block
+                    transition: 0.3s
+                    &:hover
+                        color: $darkBlue
+                &:not(:last-child)
+                    a
+                        margin-bottom: 25px
+        &_social
+            &-item
+                display: flex
+                margin-bottom: 19px
+                &:first-child
+                    img
+                        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(303deg) brightness(103%) contrast(101%)
+                        transition: 0.3s
+                        &:hover
+                            filter: invert(50%) sepia(43%) saturate(821%) hue-rotate(160deg) brightness(87%) contrast(95%)
+                a
+                    display: block
+                    &:first-child
+                        margin-right: 37px
+        &_name
+            display: flex
+            p
+                color: #ffffff
+                font-family: $nunito
+                font-size: 27px
+                font-weight: 800
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                margin-right: 15px
+            span
+                color: #ffffff
+                font-family: $nunito
+                font-size: 11px
+                font-weight: 300
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+
+
+@media (max-width: 780px)
+    .footer 
+        padding: 20px 0
+        &-blok
+            flex-direction: column
+            align-items: center
+            ul
+                margin-bottom: 25px
+                li
+                    p
+                        text-align: center
+                    a
+                        text-align: center
+
+            &_name
+                align-items: center

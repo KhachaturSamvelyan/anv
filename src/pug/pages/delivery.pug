@@ -1,0 +1,49 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'delivery.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	section.delivery.container
+			.delivery-blok
+				p.p Доставка
+				h1 Доставка
+					br 
+					| и самовывоз
+				.delivery-blok-item.fr
+					img(src="img/ship.svg", alt="" width="52" height="29")
+					.delivery-blok-item_p
+						p 
+							b Курьерская доставка 
+							|по Москве - 
+							span.blue бесплатно 
+							| при заказе от 3 000 руб.
+						p 
+							| При заказе менее 3 000 руб. стоимость доставки - 
+							b 500 руб.
+				.delivery-blok-item.fs
+					img(src="img/box.svg", alt="" width="32" height="36")
+					.delivery-blok-item_p
+						p 
+							b Самовывоз 
+							|осуществляется из наших фирменных бутиков расположенных в ТРЦ 
+							span.blue Океания 
+							|и  ТРЦ 
+							span.blue Европолис. 
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	

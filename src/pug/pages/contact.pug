@@ -1,0 +1,42 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'contact.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	section.contact.container
+		.contact-blok
+			.contact-blok-left
+				p магазины
+				h1 Наши магазины
+			.contact-blok-right
+				a.tel(href="tel:+74952207476") +7 495 220-74-76  
+				a.mail(href="mailto:zakaz@anvirelle.ru") zakaz@anvirelle.ru
+				.contact-blok-right_social
+					a(href="") 
+						img(src="img/fb.svg", alt="" width="45" height="45")
+					a(href="") 
+						img(src="img/inst.svg", alt="" width="45" height="45")
+
+	include ../blocks/map.pug
+
+
+
+
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	

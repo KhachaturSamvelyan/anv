@@ -1,0 +1,381 @@
+@import "../blocks/var"
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header_top"
+@import "../blocks/header_logo"
+@import "../blocks/header_menu"
+@import "../blocks/product"
+@import "../blocks/footer"
+
+.mobile-gender
+    display: none!important
+
+.fav
+    margin-top: 45px
+    .tabs-stage
+        margin-top: 45px!important
+    .cart-product
+        display: flex
+        &-left
+            &_item
+                display: flex
+                align-items: center
+                padding-bottom: 39px
+                border-bottom: 1px solid $lightGray
+                .d-f
+                    display: flex
+                    align-items: center
+                img
+                    margin-right: 43px
+                .title
+                    max-width: 165px
+                    color: #272727
+                    font-family: $nunito
+                    font-size: 14px
+                    font-weight: 400
+                    font-style: normal
+                    letter-spacing: normal
+                    line-height: 22px
+                    text-align: left
+                    margin-right: 96px
+                &:not(:last-child)
+                    margin-bottom: 33px
+                &-size
+                    margin-right: 55px
+                    p
+                        margin-bottom: 16px
+                        color: #949494
+                        font-family: $nunito
+                        font-size: 11px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                    button
+                        color: #0f0f0f
+                        font-family: $nunito
+                        font-size: 12px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                        line-height: 21.18px
+                        text-align: center
+                        width: 43px
+                        height: 30px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        background: #f1f1f1
+                        border: 1px solid transparent
+                        cursor: pointer
+                        transition: 0.3s
+                        &:hover
+                            border: 1px solid $darkBlue
+                &-count
+                    margin-right: 69px
+                    height: 61px
+                    p
+                        margin-bottom: 18px
+                        color: #949494
+                        font-family: $nunito
+                        font-size: 11px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                    &-btn
+                        display: flex
+                        align-items: center
+                        button
+                            border: none
+                            cursor: pointer
+                            background: transparent
+                            color: #0f0f0f
+                            font-family: $nunito
+                            font-size: 12px
+                            font-weight: 300
+                            font-style: normal
+                            letter-spacing: normal
+                            line-height: 21.18px
+                            text-align: center
+                            font-style: normal
+                        p
+                            color: #0f0f0f
+                            font-family: $nunito
+                            font-size: 12px
+                            font-weight: 300
+                            font-style: normal
+                            letter-spacing: normal
+                            line-height: 21.18px
+                            text-align: center
+                            font-style: normal
+                            margin: 0 13px
+
+                .price-blok
+                    margin-right: 25px
+                    .sale-price
+                        color: #9e9e9e
+                        font-family: $nunito
+                        font-size: 13px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                        text-align: left
+                        text-decoration: line-through
+                    &_item
+                        display: flex
+                        align-items: center
+                        p
+                            color: black
+                            font-family: $nunito
+                            font-size: 22px
+                            font-weight: 400
+                            font-style: normal
+                            letter-spacing: normal
+                        span
+                            color: #2e2e2e
+                            font-family: $nunito
+                            font-size: 13px
+                            font-weight: 700
+                            font-style: normal
+                            letter-spacing: normal
+                            line-height: 14.77px
+                            text-align: left
+                            font-style: normal
+                            display: block
+                            position: relative
+                            width: 51px
+                            height: 54px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            margin-left: 5px
+                            &:before 
+                                content: url("../../img/shape.svg")
+                                position: absolute
+                                z-index: -1
+                                top: 0
+
+                .h-btn
+                    border: none
+                    background: none
+                    cursor: pointer
+                    margin-right: 13px
+                    transition: 0.3s
+                    margin-top: 18px
+
+                    img
+                        margin-right: 0
+                    &:hover
+                        img
+                            filter: invert(50%) sepia(43%) saturate(821%) hue-rotate(160deg) brightness(87%) contrast(95%)
+                .delete
+                    border: none
+                    background: none
+                    cursor: pointer
+                    margin-right: 13px
+                    transition: 0.3s
+                    margin-top: 18px
+
+                    &:hover
+                        svg
+                            path
+                                fill: $darkBlue
+
+        &-right
+            padding: 36px 43px
+            border: 1px solid rgba(0, 0, 1, 0.29)
+            background-color: #ffffff
+            margin-left: 59px
+            min-width: 443px
+            .cart-p
+                margin-bottom: 14px
+                color: #323232
+                font-family: $nunito
+                font-size: 19px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+            .form
+                display: flex
+                justify-content: space-between
+                margin-bottom: 8px
+                input
+                    padding: 12px 15px
+                    color: #707070
+                    font-family: $nunito
+                    font-size: 13px
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+                    border: 1px solid rgba(0, 0, 1, 0.16)
+                    min-width: 205px
+                button
+                    cursor: pointer
+                    transition: 0.3s
+                    border: none
+                    background: none
+                    color: #0d59a9
+                    font-family: $nunito
+                    font-size: 13px
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+                    text-transform: uppercase
+                    &:hover
+                        color: $pink
+            
+            .pink
+                color: #e90052
+                font-family: $nunito
+                font-size: 11px
+                font-weight: 400
+                font-style: normal
+                display: block
+                margin-bottom: 26px
+                letter-spacing: normal
+
+            &-title
+                padding-bottom: 20px
+                border-bottom: 1px solid $lightGray
+                margin-bottom: 20px
+                &_p
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 9px
+                    p
+                        color: #0e0e0e
+                        font-family: $nunito
+                        font-size: 14px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                    span
+                        color: #242424
+                        font-family: $nunito
+                        font-size: 14px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+            &-total
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 27px
+                p
+                    color: #111111
+                    font-family: $nunito
+                    font-size: 19px
+                    font-weight: 300
+                    font-style: normal
+                    letter-spacing: normal
+
+                span
+                    color: #111111
+                    font-family: $nunito
+                    font-size: 25px
+                    font-weight: 400
+                    font-style: normal
+                    letter-spacing: normal
+        a
+            color: #ffffff
+            font-family: Nunito
+            font-size: 18px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            text-align: center
+            text-transform: uppercase
+            padding: 18px 0
+            width: 100%
+            display: block
+            background: #26b76a
+            border-radius: 4px
+            transition: 0.3s
+            &:hover
+                background: $darkBlue
+
+
+.product-item__top-heart     
+    background: $darkBlue!important
+    img
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(303deg) brightness(103%) contrast(101%)
+
+@media (max-width: 1380px)
+    .fav
+        .cart-product
+            width: 100%
+            justify-content: space-between
+            &-left
+                &_item
+                    img
+                        margin-right: 20px
+                    .title
+                        margin-right: 10px
+            &-right
+                min-width: unset
+                margin-left: 5px
+
+
+
+@media (max-width: 1225px)
+    .fav
+        .cart-product
+            flex-direction: column
+            &-left
+                margin-bottom: 20px
+            &-right
+                margin-left: 0
+
+
+@media (max-width: 830px)
+    .fav
+        .cart-product
+            flex-direction: column
+            &-left
+                margin-bottom: 20px
+                &_item
+                    flex-direction: column
+                    padding-bottom: 10px
+                    .title
+                        margin-right: 5px
+                        max-width: 135px
+                    &-size
+                        margin-right: 5px
+                    &-count
+                        margin-right: 0
+                        text-align: center
+                        &-btn
+                            p
+                                margin: 0 9px
+                            button
+                                font-size: 16px
+                    .d-f
+                        margin-bottom: 20px
+                        width: 100%
+                        justify-content: space-between
+
+
+                    .price-blok
+                        &_item
+                            p
+                                font-size: 17px
+                                margin-right: 5px
+                            span
+                                width: 30px
+                                height: 30px
+                                &:before
+                                    top: -11px
+
+            &-right
+                margin-left: 0
+                padding: 20px
+
+    
+      
+
+        
+
+    .price-blok
+        flex-direction: column
+        &_item
+            margin-left: 0!important
+            margin-top: 10px

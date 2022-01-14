@@ -1,0 +1,31 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'thx.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	section.thx
+		.thx-blok
+			h1 спасибо за заказ
+			p Ваш заказ №4213
+			span Для подтверждения заказа с вами свяжется наш менеджер. Рабочее время с 10 до 22 ежедневно.
+			a(href="") Вернуться на главную
+
+
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	

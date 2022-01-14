@@ -1,0 +1,89 @@
+@import "../blocks/var"  
+
+.header_top
+    padding: 18px 0
+    border-bottom: 1px solid $gray
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        &--left
+            display: flex
+            align-items: center
+            img
+                margin-right: 12px
+                width: 22px
+                height: 22px
+            p
+                color: $black
+                font-family: $nunito
+                font-size: 13px
+                font-weight: 300
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                span
+                    margin: 0 11px
+        &--right
+            display: flex
+            align-items: center
+            .tel
+                margin-right: 255px
+                display: flex
+                align-items: center
+                color: $black
+                font-family: $nunito
+                font-size: 16px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: 14.79px
+                text-align: left
+                text-transform: uppercase
+                transition: 0.3s
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                &:hover
+                    color: $blue
+                    img
+                        filter: invert(45%) sepia(100%) saturate(338%) hue-rotate(159deg) brightness(99%) contrast(86%)
+                img
+                    margin-right: 19px
+                    width: 15px
+                    height: 15px
+            ul
+                display: flex
+                align-items: center
+                li
+                    &:not(:last-child)
+                        margin-right: 38px
+                    a
+                        color: $darkGray
+                        font-family: $nunito
+                        font-size: 14px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                        line-height: 14.79px
+                        text-align: left
+                        transition: 0.3s
+                        &:hover
+                            color:  $blue
+
+
+@media (max-width: 1140px)
+    .header_top
+        &-content
+            &--right
+                .tel
+                    position: unset
+                    margin-right: 20px
+                    left: unset
+                    transform: unset
+
+
+@media (max-width: 1065px)
+    .header_top
+        display: none

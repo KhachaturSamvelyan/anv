@@ -1,0 +1,392 @@
+@import "../blocks/var"
+
+.product
+    margin-bottom: 66px
+    .product-content
+        .tabs
+            .tabs-nav
+                display: flex
+                align-items: center
+                li
+                    opacity: 0.5
+                    &:not(:last-child)
+                        margin-right: 54px
+                    a           
+                        color: #373737
+                        font-family: $nunito
+                        font-size: 27px
+                        font-weight: 300
+                        font-style: normal
+                        letter-spacing: normal
+                        line-height: 21.18px
+                        text-align: center
+                        display: flex
+                        align-items: center
+                        img
+                            margin-left: 28px
+                .tab-active
+                    opacity: 1
+                    a
+                        font-weight: 700
+            .sale
+                margin-top: 17px
+                display: flex
+                align-items: center
+                padding: 15px 12px
+                border: 1px solid #50a9dd
+                border-radius: 8px
+                max-width: 776px
+                img
+                    margin-right: 6px
+                p
+                    color: #1b1b1b
+                    font-family: $nunito
+                    font-size: 15px
+                    font-weight: 400
+                    font-style: normal
+                    letter-spacing: normal
+                    line-height: 23.79px
+                    text-align: left
+                    span
+                        color: $darkBlue
+                svg
+                    margin-left: auto
+                    transition: 0.3s
+                    cursor: pointer
+                    &:hover
+                        path
+                            fill: $darkBlue
+            
+            .tabs-stage
+                margin-top: 34px
+                .owl-carousel
+                    img
+                        width: unset
+                    .owl-item
+                        width: 336px
+                .tabs-item
+                    display: flex
+                    justify-content: space-between
+                    .product-item
+                        max-width: 336px
+                        position: relative
+                        .product-slider
+                            padding-top: 25px
+
+                        .owl-carousel
+                            .owl-dots
+                                width: 100%
+                                height: 100%
+                                top: 0
+                                position: absolute
+                                button
+                                    width: 33%
+                                    height: 100%
+                                    border: none
+                                    display: none
+                                .active
+                                    border-top: 2px solid $lightGray
+
+                               
+                        &:hover
+                            .owl-dots
+                                button
+                                    display: block
+                            .product-item__bottom
+                               box-shadow: 2px 40px 24px 0px rgba(0, 0, 1, 0.08)
+                            .product-item__bottom-hide
+                                display: block
+                            .owl-dots
+                                display: flex
+                        &__top
+                            background: #f5f5f5
+                            position: relative
+                            .new
+                                position: absolute
+                                left: 4px
+                                top: 13px
+                            &-heart
+                                cursor: pointer
+                                width: 30px
+                                height: 30px
+                                background: #ffffff
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                border-radius: 100%
+                                position: absolute
+                                top: 9px
+                                right: 10px
+                                transition: 0.3s
+                                &:hover
+                                    background: $darkBlue
+                                    img
+                                        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(303deg) brightness(103%) contrast(101%)
+                            .product-slider
+                                img
+                                    margin: 0 auto
+
+                        &__bottom
+                            padding: 38px 0 0 
+                            text-align: center
+                            .title
+                                margin: 0 auto
+                                color: #373737
+                                font-family: $nunito
+                                font-size: 18px
+                                font-weight: 300
+                                font-style: normal
+                                letter-spacing: normal
+                                line-height: 21.18px
+                                text-align: center
+                                display: block
+                                margin-bottom: 9px
+                                max-width: 165px
+                            .cat
+                                color: #3c95ce
+                                font-family: $nunito
+                                font-size: 13px
+                                font-weight: 300
+                                font-style: normal
+                                letter-spacing: normal
+                                line-height: 21.18px
+                                text-align: center
+                                display: block
+                                margin-bottom: 47px
+                            
+                            p
+                                color: #373737
+                                font-family: $nunito
+                                font-size: 20px
+                                font-weight: 700
+                                font-style: normal
+                                letter-spacing: normal
+                                line-height: 21.18px
+                                text-align: center
+                                
+                            .price-blok
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                
+                                &_item
+                                    display: flex
+                                    margin-left: 18px
+                                    align-items: center
+                                    p
+                                        color: #8c8c8c
+                                        font-family: $nunito
+                                        font-size: 15px
+                                        font-weight: 300
+                                        font-style: normal
+                                        letter-spacing: normal
+                                        line-height: 21.18px
+                                        text-align: center
+                                        text-decoration: line-through
+                                        margin-right: 7px
+                                        margin-bottom: 0
+                                    span
+                                        color: #2e2e2e
+                                        font-family: $nunito
+                                        font-size: 13px
+                                        font-weight: 700
+                                        font-style: normal
+                                        letter-spacing: normal
+                                        line-height: 14.77px
+                                        text-align: left
+                                        font-style: normal
+                                        display: block
+                                        position: relative
+                                        width: 51px
+                                        height: 54px
+                                        display: flex
+                                        align-items: center
+                                        justify-content: center
+                                        &:before 
+                                            content: url("../../img/shape.svg")
+                                            position: absolute
+                                            z-index: -1
+                                            top: 0
+
+                            &-hide
+                                display: none
+                                padding-top: 23px
+                                position: absolute
+                                left: 50%
+                                transform: translateX(-50%)
+                                box-shadow: 0px 21px 24px -5px rgba(0, 0, 1, 0.08)
+                                width: 100%
+                                padding-bottom: 38px
+                                background: white
+                                a
+                                    margin: 0 auto 34px
+                                    padding: 10px
+                                    background-color: #26b76a
+                                    color: #ffffff
+                                    font-family: $nunito
+                                    font-size: 13px
+                                    font-weight: 400
+                                    font-style: normal
+                                    letter-spacing: normal
+                                    line-height: 21.18px
+                                    text-align: center
+                                    border-radius: 3px
+                                    display: block
+                                    display: flex
+                                    max-width: 199px
+                                    justify-content: center
+                                    transition: 0.3s
+                                    border: 1px solid transparent
+                                    &:hover
+                                        background: white
+                                        border: 1px solid #1ea65c
+                                        color: #1ea65c
+                                        img
+                                            filter: invert(52%) sepia(76%) saturate(404%) hue-rotate(96deg) brightness(95%) contrast(96%)
+                                    img
+                                        margin-left: 4px
+                                        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(303deg) brightness(103%) contrast(101%)
+                                
+                                .size
+                                    display: flex
+                                    justify-content: center
+                                    margin-bottom: 18px
+                                    .gray
+                                        opacity: 0.4
+                                    button
+                                        border: 1px solid transparent
+                                        cursor: pointer
+                                        border: none
+                                        width: 43px
+                                        height: 30px
+                                        color: #0f0f0f
+                                        font-family: $nunito
+                                        font-size: 12px
+                                        font-weight: 300
+                                        font-style: normal
+                                        letter-spacing: normal
+                                        line-height: 21.18px
+                                        text-align: center
+                                        display: flex
+                                        align-items: center
+                                        justify-content: center
+                                        background: #f1f1f1
+                                        &:hover
+                                            border: 1px solid $darkBlue
+                                        &:not(:last-child)
+                                            margin-right: 8px
+                                .color
+                                    display: flex
+                                    align-items: center
+                                    justify-content: center
+                                    .black
+                                        background: black
+                                    .white
+                                        background: white
+                                        border: 1px solid rgba(0, 0, 1, 0.21)
+                                    .brown
+                                        background:  #9a4b1b
+                                    button
+                                        border: none
+                                        cursor: pointer
+                                        width: 23px
+                                        height: 23px
+                                        border-radius: 100%
+                                        &:not(:last-child)
+                                            margin-right: 11px
+
+                .load-more
+                    margin-top: 43px
+                    padding: 18px 0px
+                    border: 1px solid #d2d2d2
+                    background-color: #ffffff
+                    text-align: center
+                    trasnition: 0.3s
+                    &:hover
+                        border: 1px solid black
+                    a
+                        color: #2e2e2e
+                        font-family: $nunito
+                        font-size: 14px
+                        font-weight: 700
+                        font-style: normal
+                        letter-spacing: normal
+                        line-height: 21.18px
+                        transition: 0.3s
+                        &:hover
+                            color: $darkBlue
+
+
+@media (max-width: 1380px)
+    .product
+        .product-content
+            .tabs
+                .tabs-stage
+                    .tabs-item
+                        .product-item
+                            max-width: 24%
+
+
+
+@media (max-width: 1160px)
+    .product
+        .product-content
+            .tabs
+                .tabs-stage
+                    .tabs-item
+                        flex-wrap: wrap
+                        justify-content: space-around
+                        .product-item
+                            max-width: 336px
+                            margin-bottom: 30px
+
+@media (max-width: 768px)
+    .product
+        .product-content
+            .tabs
+                .tabs-nav
+                    justify-content: center
+                    li
+                        &:not(:last-child)
+                            margin-right: 34px
+                        a
+                            font-size: 20px
+                            img
+                                width: 20px
+                                height: 20px
+                                margin-left: 18px
+                .sale
+                    margin-top: 20px
+                    padding: 10px
+                    p
+                        font-size: 13px
+                        max-width: 245px
+
+                .tabs-stage
+                    .tabs-item
+                        .product-item
+                            max-width: 48%
+                            .new
+                                width: 30px
+                                height: 30px
+                            &__bottom
+                                padding-top: 20px
+
+                            .product-item__bottom-hide
+                                a
+                                    width: 90%
+                                    font-size: 12px
+                                    white-space: nowrap
+                                .size
+                                    button
+                                        width: 28px
+                            .owl-item
+                                img
+                                    width: 100%
+                                    height: 250px
+                                    object-fit: contain
+
+
+
+
+

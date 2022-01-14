@@ -1,0 +1,134 @@
+extends ../layout/layout.pug
+
+block variables
+	- var title = 'Anvrelle | Коллекция спортивной детской одежды 2021';
+
+block links
+	- var link = 'check.css';
+
+block scripts
+	- var js = 'index.js';
+
+block header
+	include ../blocks/header.pug
+	
+
+block content
+	section.check
+		h1 Оформление заказа
+		.check-blok
+			.check-left
+				form#form1
+					h2 Контактные данные
+					.check-left_form
+						.check-left_form-inp.name-inp
+							input(type="text" placeholder="Почта" required)
+							p.error Заполните поле
+							.check-left_form-inp_login
+								a(href="") Авторизоваться
+								a(href="") Зарегистрироваться
+						.check-left_form-inp
+							input(type="text" placeholder="Телефон" required)
+							p.error Заполните поле
+					.check-left_form
+						.check-left_form-inp.name-inp
+							input(type="text" placeholder="Имя" required)
+							p.error Заполните поле
+						.check-left_form-inp
+							input(type="text" placeholder="Фамилия" required)
+							p.error Заполните поле
+					h2.mt Способы доставки
+					.wrap-drop
+						div(tabindex="1" class="wrapper-dropdown-3 dropdown" id="dd")
+							img(src="img/drop.svg", alt="")
+							span.holder Москва
+							ul(style="z-index: 99;")
+								li Москва
+								li Москва 2
+								li Москва 3
+								li Москва 4
+					.delivery-btn
+						button.active Курьером
+						button Самовывоз
+					h2.mt Адрес доставки
+					.check-left_form
+						.check-left_form-inp.w-100
+							input(type="text" placeholder="Город, улица, дом, строение, корпус" required)
+							p.error Заполните поле
+					.check-left_form.w-143
+						.check-left_form-inp.w-185.name-inp
+							input(type="text" placeholder="Квартира / офис" required)
+							p.error Заполните поле
+						.check-left_form-inp.name-inp
+							input(type="text" placeholder="Подъезд" required)
+							p.error Заполните поле
+						.check-left_form-inp
+							input(type="text" placeholder="Этаж" required)
+							p.error Заполните поле
+					h2.mt Служба доставки
+					.wrap-drop.wrap-blue
+						div(tabindex="1" class="wrapper-dropdown-3 dropdown" id="ddd")
+							img(src="img/drop.svg", alt="")
+							span.holder Курьерская доставка по Москве 500руб.
+							ul(style="z-index: 99;")
+								li Курьерская доставка по Москве 500руб.
+								li Курьерская доставка по Москве 2 500руб.
+								li Курьерская доставка по Москве 3 500руб.
+								li Курьерская доставка по Москве 4 500руб.
+					h2.mt Способы оплаты
+					.delivery-btn.m-t-p
+						button.active Наличными
+						button Картой при получении
+					.check-left_form
+						.check-left_form-inp.w-100
+							input(type="text" placeholder="Комментарий к заказу" required)
+							p.error Заполните поле
+					h2.mt Способы подтверждения заказа
+					.confirm-order
+						label Звонок оператора
+							input(type="radio" checked)
+							span(class="checkmark")
+						label SMS подтверждение
+							input(type="radio")
+							span(class="checkmark")
+						label Без подтверждения
+							input(type="radio")
+							span(class="checkmark")
+			.check-right-main
+				.check-right
+					p.cart-p Корзина
+					.check-right-title
+						.check-right-title_p
+							p Товары (2):
+							span 10 420 р.
+						.check-right-title_p
+							p Скидка:
+							span 990 р.
+						.check-right-title_p
+							p Доставка:
+							span 500 р.
+					.check-right-total
+						p Итого:
+						span 10 920 р.
+					a(href="")#btn Оформить заказ
+				
+					.form-bottom
+						label
+							input(type="checkbox")
+							span(class="checkmark")
+							p Нажимая кнопку “Добавить отзыв”, вы автоматически соглашаетесь с 
+								a(href="")  политикой конфиденциальности 
+								|и
+								a(href="")  условиями оферты
+
+
+
+
+
+
+
+
+
+block footer
+	include ../blocks/footer.pug
+	
